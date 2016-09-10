@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color: #A4A400;
+    font-family: Futura;
+    text-decoration: underline;
+    font-size: 28pt;
+}
+
+h2 {
+    color: #A4A400;
+    background-color:#F0F0F0;
+    font-family: Verdana;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 22pt;
+}
+
+a {
+    color: #B4B401;
+}
+
+p {
+    color:#404040;
+    font-size: 14pt;
+    font-family: Georgia, Garamond, serif;
+}
+
+li {
+    color:#404040;
+    font-size: 14pt;
+    font-family: Georgia, Garamond, serif;
+}
