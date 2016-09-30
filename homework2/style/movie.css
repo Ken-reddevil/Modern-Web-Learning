@@ -1,0 +1,143 @@
+/*body*/
+body {
+    background-image: url("../images/background.png");
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
+    font-family: "Verdana", "Tahoma", sans-serif;
+}
+
+/*bannar*/
+#bannar {
+    background-image: url("../images/bannerbackground.png");
+    background-repeat: repeat-x;
+    height: 50px;
+    text-align: center;
+}
+
+/*heading*/
+#center-heading {
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+}
+
+/*content area*/
+#content-area {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    border: 4px gray solid;
+    overflow: hidden;
+}
+
+/*rating*/
+#rating {
+    width: 550px;
+    text-align: left;
+    background-image: url("../images/rottenbackground.png");
+    background-repeat: repeat-x;
+    background-size: auto 83px;
+    font-weight: bold;
+    color: red;
+}
+
+#percentage {
+    font-size: 48pt;
+    vertical-align: 15%;
+}
+
+#total {
+    font-weight: normal;
+    font-size: 8pt;
+    color: white;
+    vertical-align: 100%;
+}
+
+/*general overview*/
+#general-overview {
+    margin-bottom: 2em;
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+}
+
+#content-area #general-overview dt {
+    font-weight: bold;
+    margin-top: 1em;
+    padding-left: 10px;
+    font-size: 8pt;
+}
+
+dl dt,dd {
+    padding-left: 10px;
+    font-family: "Arial", sans-serif;
+}
+
+/*comment*/
+#left-section {
+    float: left;
+    margin-left: 11px;
+    width: 258px;
+}
+
+#right-section {
+    float: left;
+    width: 258.5px;
+    margin-left: 11px;
+}
+
+p.comment {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E1D697;
+    border: 2px solid grey;
+    padding: 8px;
+    margin-bottom: 3px;
+    clear: left;
+    overflow: hidden;
+}
+
+
+p.user img {
+    margin-right: 5px;
+    float: left;
+    margin-bottom: 3em;
+}
+
+p.publician {
+    margin-top: 0px;
+    font-style: italic;
+}
+
+p.user {
+    margin-bottom: 0px;
+    vertical-align: top;
+}
+
+p.comment img {
+    float: left;
+    margin-right: 5px;
+}
+
+/*page*/
+#page {
+    position: absolute;
+    bottom: 0px;
+    width: 800px;
+    background-color: #A2B964;
+    border: 5px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*link*/
+#link {
+    position: fixed;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
