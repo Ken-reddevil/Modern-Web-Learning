@@ -1,0 +1,186 @@
+/*general style*/
+
+* {
+    padding: 0;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+    font-size: 13pt;
+}
+
+
+/*the position of the whole information*/
+
+#positioner {
+    height: 600px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: relative;
+}
+
+
+/*style of the heading*/
+
+h1 {
+    height: 40px;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+
+/*style of the hint and result*/
+
+#hint,
+#result {
+    margin: 0;
+    text-align: center;
+}
+
+#hint {
+    font-size: 20pt;
+}
+
+#result {
+    height: 20px;
+    font-size: 18pt;
+}
+
+#show {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    background-color: rgba(200, 200, 200, 0.45);
+    width: 150px;
+    height: 40px;
+}
+
+
+/*position of the maze*/
+
+#maze {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 500px;
+    height: 300px;
+}
+
+
+/*style of the wall*/
+
+.wall,
+.change {
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+}
+
+.wall {
+    background-color: rgba(200, 200, 200, 0.45);
+}
+
+.change {
+    background-color: red;
+}
+
+
+/*position and style of the wall*/
+
+#wall1 {
+    border-width: 1px 0px 0px 1px;
+    width: 150px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+#wall2 {
+    border-width: 1px 0px 1px 0px;
+    width: 197px;
+    height: 50px;
+    left: 151px;
+    top: 0px;
+}
+
+#wall3 {
+    border-width: 1px 1px 0px 0px;
+    width: 151px;
+    height: 50px;
+    right: 0px;
+    top: 0px;
+}
+
+#wall4 {
+    border-width: 0px 1px 1px 1px;
+    width: 150px;
+    height: 149px;
+    left: 0px;
+    top: 51px;
+}
+
+#wall5 {
+    border-width: 0px 1px 1px 1px;
+    width: 150px;
+    height: 149px;
+    right: 0px;
+    top: 51px;
+}
+
+#wall6 {
+    border-width: 1px 1px 0px 1px;
+    width: 100px;
+    height: 148px;
+    left: 200px;
+    top: 100px;
+}
+
+#wall7 {
+    border-width: 1px 0px 1px 1px;
+    width: 199px;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+}
+
+#wall8 {
+    border-width: 0px 0px 1px 0px;
+    width: 101px;
+    height: 50px;
+    left: 200px;
+    bottom: 0px;
+}
+
+#wall9 {
+    border-width: 1px 1px 1px 0px;
+    width: 198px;
+    height: 50px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/*position and style of the start and end*/
+
+#start,
+#end {
+    border: 1px black solid;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 204px;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+#start {
+    left: 0px;
+    background-color: #82FF82;
+}
+
+#end {
+    background-color: #8685FD;
+    right: 0px;
+}
