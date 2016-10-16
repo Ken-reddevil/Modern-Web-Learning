@@ -131,16 +131,9 @@ li {
 .button,
 .mouse {
     border: 1px solid black;
-    border-radius: 50% 50% 50% 50%;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-}
-
-.button {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 7.5px;
     background-color: white;
-}
-
-.mouse {
-    background-color: blue;
 }
