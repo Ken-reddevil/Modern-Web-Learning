@@ -70,3 +70,8 @@ button {
     overflow: hidden;
     box-shadow: 2px 2px 0px 0px #000;
 }
+
+.change {
+    box-shadow: 1px 1px 1px 1px rgb(200, 200, 200);
+    background-color: rgb(100, 140, 170);
+}
