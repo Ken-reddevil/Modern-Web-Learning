@@ -40,15 +40,9 @@ function start() {
         score = 0;
         st();
         mouseSet();
-    } else if (status == -1) {
-        //if the game is pausing, restart the game
-        st();
     } else if (status == 1) {
-        //if gaming, pause the game
-        status = -1;
-        clearInterval(timer);
-        timer = null;
-        document.getElementById("status").innerHTML = "Pausing";
+        //if gaming, stop the game
+        end();
     }
 }
 
@@ -56,22 +50,26 @@ function timeSet() {
     timer = setInterval(sub, 1000);
 }
 
+function end() {
+    document.getElementById("time").innerHTML = "0";
+    document.getElementById("status").innerHTML = "Pressing button to restart";
+    var mouse = document.getElementsByClassName("mouse");
+    if (mouse.length != 0) {
+        mouse[0].checked = 0;
+        mouse[0].className = "button";
+    }
+    alert("Game Over, you have got " + score);
+    clearInterval(timer);
+    timer = null;
+    status = 0;
+}
+
 //time function
 function sub() {
     time--;
     document.getElementById("time").innerHTML = time;
     if (time == 0) {
-        document.getElementById("time").innerHTML = "0";
-        document.getElementById("status").innerHTML = "Pressing button to restart";
-        var mouse = document.getElementsByClassName("mouse");
-        if (mouse.length != 0) {
-            mouse[0].checked = 0;
-            mouse[0].className = "button";
-        }
-        alert("Game Over, you have got " + score);
-        clearInterval(timer);
-        timer = null;
-        status = 0;
+        end();
     }
 }
 
