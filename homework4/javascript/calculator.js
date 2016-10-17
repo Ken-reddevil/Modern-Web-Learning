@@ -6,13 +6,11 @@ window.onload = function() {
     for (var i = 0; i < document.getElementsByTagName('button').length; i++) {
         document.getElementsByTagName('button')[i].onmousedown = function() {
             var bu = this;
-            bu.style.backgroundColor = "rgb(100, 140, 170)";
-            bu.style.boxShadow = "1px 1px 1px 1px rgb(200, 200, 200)";
+            bu.className = "change";
         }
         document.getElementsByTagName('button')[i].onmouseup = function() {
             var bu = this;
-            bu.style.backgroundColor = "rgba(200, 200, 200, 0.5)";
-            bu.style.boxShadow = "2px 2px 0px 0px #000";
+            bu.className = "";
         }
     }
     //change the equation when some buttons are clicked
@@ -149,8 +147,7 @@ window.onload = function() {
     document.getElementById("equal").onclick = function() {
         try {
             eval("result = " + show);
-        }
-        catch (err) {
+        } catch (err) {
             alert("wrong input!");
             show = "";
             result = "";
