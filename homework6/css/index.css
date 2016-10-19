@@ -1,0 +1,134 @@
+/*general style*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+
+/*position*/
+
+#positioner {
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30pt;
+    height: 50px;
+    width: 480px;
+    top: 10px;
+    left: 0px;
+}
+
+
+/*style of the button*/
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 20pt;
+    position: absolute;
+    top: 550px;
+    left: 165px;
+    background-color: rgb(150, 150, 250);
+}
+
+#game-area {
+    width: 484px;
+    height: 484px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 1px solid black;
+}
+
+
+/*style of each block*/
+
+.pic {
+    width: 120px;
+    height: 120px;
+    background-image: url("../image/panda.jpg");
+    background-size: 480px 480px;
+    border: 0.5px solid black;
+    transition: all 0.5s linear;
+    position: absolute;
+}
+
+#blank {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    transition: all 0.5s linear;
+}
+
+.row0 {
+    background-position-y: 0px;
+}
+
+.row1 {
+    background-position-y: -120px;
+}
+
+.row2 {
+    background-position-y: -240px;
+}
+
+.row3 {
+    background-position-y: -360px;
+}
+
+.col0 {
+    background-position-x: 0px;
+}
+
+.col1 {
+    background-position-x: -120px;
+}
+
+.col2 {
+    background-position-x: -240px;
+}
+
+.col3 {
+    background-position-x: -360px;
+}
+
+.r0 {
+    top: 0px;
+}
+
+.r1 {
+    top: 121px;
+}
+
+.r2 {
+    top: 241.5px;
+}
+
+.r3 {
+    top: 362.5px;
+}
+
+.c0 {
+    left: 0px;
+}
+
+.c1 {
+    left: 121px;
+}
+
+.c2 {
+    left: 241.5px;
+}
+
+.c3 {
+    left: 362.5px;
+}
