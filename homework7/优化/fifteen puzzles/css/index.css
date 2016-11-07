@@ -1,0 +1,95 @@
+/*general style*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+
+/*position*/
+
+#positioner {
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30pt;
+    height: 50px;
+    width: 480px;
+    top: 10px;
+    left: 0px;
+}
+
+
+/*style of the button*/
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 20pt;
+    position: absolute;
+    top: 580px;
+    left: 165px;
+    background-color: rgb(150, 150, 250);
+}
+
+#game-area {
+    width: 501px;
+    height: 501px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 1px solid black;
+}
+
+#image {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -39px;
+    left: -519px;
+    background-image: url("../image/panda.jpg");
+    background-size: 496px 496px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#show {
+    font-size: 13pt;
+    position: absolute;
+    left: 520px;
+    top: 100px;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#show:hover #image {
+    z-index: 1;
+    opacity: 1;
+}
+
+
+/*style of each block*/
+
+#game-area div {
+    width: 125px;
+    height: 125px;
+    background-image: url("../image/panda.jpg");
+    background-size: 500px 500px;
+    border: 0.5px solid black;
+    transition: all 0.1s linear;
+    position: absolute;
+}
+
+#game-area div:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}

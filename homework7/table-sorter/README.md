@@ -1,0 +1,4 @@
+- 神秘代码：  
+order = 1;$("th").click(function(event) { var rows = document.getElementsByTagName("table")[0].rows; var temp; for (var i = 0; i < rows[0].cells.length; i++) {if (rows[0].cells[i].innerHTML == event.target.innerHTML) { for (var j = 1; j < rows.length - 1; j++) { for (var k = 1; k < rows.length - 1; k++) { var r1 = rows[k].cells[i];var r2 = rows[k + 1].cells[i]; if (order == -1) {if (r1.innerHTML < r2.innerHTML) { temp = rows[k].innerHTML; rows[k].innerHTML = rows[k + 1].innerHTML;rows[k + 1].innerHTML = temp;}} else {if (r1.innerHTML > r2.innerHTML) { temp = rows[k].innerHTML; rows[k].innerHTML = rows[k + 1].innerHTML; rows[k + 1].innerHTML = temp; }}}} if (order == 1) order = -1; else order = 1;}}});  
+- 网页：  
+http://soj.sysu.edu.cn, http://acm.csu.edu.cn/OnlineJudge/problemset.php，http://acm.hust.edu.cn/problem/list

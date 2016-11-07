@@ -1,0 +1,53 @@
+* {
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+h1 {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+table,
+h2 {
+    margin-left: 100px;
+}
+
+td {
+    border: solid grey;
+    border-width: 0px 1px 1px 0px;
+    padding-left: 3px;
+    width: 190px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid grey;
+    border-width: 1px 0px 0px 1px;
+}
+
+th {
+    text-align: left;
+    background-color: #021C7B;
+    color: white;
+    border: white solid;
+    border-width: 0px 1px 0px 0px;
+    padding-left: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #DDDDDD;
+}
+
+.ascend {
+    background-color: #A6AFFC;
+    background-image: url("../img/ascend.png");
+    background-repeat: no-repeat;
+    background-position: 170px 3px;
+}
+
+.descend {
+    background-color: #A6AFFC;
+    background-image: url("../img/descend.png");
+    background-position: 170px 3px;
+    background-repeat: no-repeat;
+}
